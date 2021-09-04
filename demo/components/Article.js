@@ -1,11 +1,11 @@
 module.exports = {
   name: 'Article',
-  path: '/articles/:slug.html',
+  path: '/articles/:slug-a:id.html',
 
   get({
     params,
   }) {
-    return params.slug;
+    return `Slug : ${params.slug} — Id : ${params.id}`;
   },
 
   post() {
