@@ -12,6 +12,7 @@
   "author": "Lana-Ambre Demailly",
   "license": "ISC",
   "dependencies": {
+    "glob": "^7.1.7",
     "path-to-regexp": "^6.2.0"
   }
 }
