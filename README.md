@@ -60,6 +60,9 @@ Démarre le serveur sur `localhost:7890`
 | path                |              | String               | x      |                   |
 | get\|post\|put\|... |              | Function => Anything |        | undefined         |
 | params              |              | UioValidatorSchema   |        | undefined         |
+| query               |              | UioValidatorSchema   |        | undefined         |
+| body                |              | UioValidatorSchema   |        | undefined         |
+| headers             |              | PlainObject          |        | undefined         |
 
 ### Enregistrer un composant
 
