@@ -2,6 +2,12 @@
 
 ## Sommaire
 
+- [Installation](#installation)
+- [Démarrage rapide](#démarrage-rapide)
+- [Composants](#composants)
+- [Contexte](#contexte)
+- [Schéma](#schéma)
+
 ## Installation
 
 ```
@@ -9,7 +15,7 @@ npm install ...
 ```
 
 
-## Démarrage rapide (Hello World)
+## Démarrage rapide
 
 `index.js`
 
