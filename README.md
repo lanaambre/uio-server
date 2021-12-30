@@ -101,3 +101,58 @@ app
   .start();
 
 ```
+
+## Contexte
+
+Le contexte est fourni aux méthodes HTTP de vos fonctions :
+
+`/components/Example.js`
+
+``` javascript
+
+const Example = {
+  name: 'Example',
+  path: '/example',
+  get(context) {
+    console.log(context);
+    // do your stuff
+  },
+};
+
+```
+
+`/components/User.js`
+
+``` javascript
+
+const User = {
+  name: 'User',
+  path: '/user/:id',
+  get({
+    params,
+  }) {
+    return `My id is ${params.id}`/;
+  },
+};
+
+```
+
+**Contenu du contexte**
+
+| headers  |   |   |
+|----------|---|---|
+| hostname |   |   |
+| ip       |   |   |
+| method   |   |   |
+| params   |   |   |
+| protocol |   |   |
+| query    |   |   |
+| req      |   |   |
+| res      |   |   |
+| socket   |   |   |
+| url      |   |   |
+
+
+## Schéma
+
+TODO
