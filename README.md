@@ -1,4 +1,4 @@
-# uio (Documentation française)
+# uio — Documentation française
 
 ## Sommaire
 
