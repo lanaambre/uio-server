@@ -12,5 +12,5 @@ new App({
   // .registerComponent(Home)
   // .registerComponent(Article)
   .registerDirectory('components')
-  .get('/alive', 'I\'m alive')
+  .get('/alive')
   .start();

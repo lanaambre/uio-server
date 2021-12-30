@@ -2,8 +2,9 @@ module.exports = {
   name: 'Home',
   path: '/',
 
-  get() {
-    const ip = this.ip;
+  get({
+    ip
+  }) {
     return `Your ip is ${ip}`;
   },
 };
