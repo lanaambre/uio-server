@@ -54,11 +54,12 @@ Démarre le serveur sur `localhost:7890`
 
 ### Déclaration d'un composant
 
-| Attributs           | Descriptions | Types    | Requis | Valeur par défaut |
-|---------------------|--------------|----------|--------|-------------------|
-| path                |              | String   | x      |                   |
-| get\|post\|put\|... |              | Function |        |                   |
-|                     |              |          |        |                   |
+| Attributs           | Descriptions | Types                | Requis | Valeur par défaut |
+|---------------------|--------------|----------------------|--------|-------------------|
+| name                |              | String               |        | undefined         |
+| path                |              | String               | x      |                   |
+| get\|post\|put\|... |              | Function => Anything |        | undefined         |
+| params              |              | UioValidatorSchema   |        | undefined         |
 
 ### Enregistrer un composant
 
