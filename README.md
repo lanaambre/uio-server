@@ -104,7 +104,7 @@ app
 
 ## Contexte
 
-Le contexte est fourni aux méthodes HTTP de vos fonctions :
+Le contexte est fourni aux méthodes HTTP de vos composants :
 
 `/components/Example.js`
 
