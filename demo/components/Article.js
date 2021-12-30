@@ -5,7 +5,7 @@ module.exports = {
   get({
     params,
   }) {
-    return `Slug : ${params.slug} — Id : ${params.id}`;
+    return `Slug : ${params.slug}\nId : ${params.id}`;
   },
 
   post() {
