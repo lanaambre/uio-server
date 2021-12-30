@@ -44,7 +44,7 @@ app
 
 ```
 
-```
+``` bash
 npm run dev
 ```
 
@@ -52,4 +52,42 @@ Démarre le serveur sur `localhost:7890`
 
 ## Composants
 
-Si il est possible d'utiliser Uio à la façon
+### Déclaration d'un composant
+
+### Enregistrer un composant
+
+``` javascript
+
+const App = require('uio');
+
+const app = new App();
+
+const Users = {
+  path: '/users/',
+  get() {
+    // get users
+  },
+  post() {
+    // create an user
+  }
+}
+
+app
+  .registerComponent(Users)
+  .start();
+
+```
+
+### Enregistrer un dossier de composant
+
+``` javascript
+
+const App = require('uio');
+
+const app = new App();
+
+app
+  .registerDirectory('components')
+  .start();
+
+```
