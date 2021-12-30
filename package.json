@@ -7,12 +7,21 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd demo && nodemon ./index.js --watch ../lib --watch .",
+    "start": "npm run dev"
   },
   "author": "Lana-Ambre Demailly",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "glob": "^7.1.7",
     "path-to-regexp": "^6.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fastify": "^3.21.0",
+    "nodemon": "^2.0.15"
   }
 }
