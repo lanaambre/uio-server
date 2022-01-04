@@ -162,7 +162,42 @@ const User = {
 
 ## Schéma
 
-TODO
+**Cette syntaxe est encore en brouillon et ne reflète pas le résultat finale**
+
+``` javascript
+
+module.exports = {
+  name: 'User',
+  path: '/user/:id',
+
+  post({
+    body,
+    $db,
+  }) {
+    // à ce stade les attributs du body ont été validé par UioValidator
+  },
+
+  body: {
+    username: {
+      type: String,
+      minLength: 3,
+      maxLength: 40,
+    },
+    password: {
+      type: String,
+      minLength: 8,
+    },
+    email: {
+      type: String,
+      format: 'email',
+    },
+  },
+  bodyOptions: {
+    removeUnwantedAttributes: true,
+  },
+};
+
+```
 
 ## Sucres syntaxiques
 
