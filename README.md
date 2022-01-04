@@ -162,7 +162,7 @@ const User = {
 
 ## Schéma
 
-**Cette syntaxe est encore en brouillon et ne reflète pas le résultat finale**
+**Cette syntaxe est encore en brouillon et ne reflète pas le résultat final**
 
 ``` javascript
 
