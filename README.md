@@ -7,6 +7,7 @@
 - [Composants](#composants)
 - [Contexte](#contexte)
 - [Schéma](#schéma)
+- [Sucres syntaxiques](#sucres-syntaxiques)
 
 ## Installation
 
@@ -162,3 +163,36 @@ const User = {
 ## Schéma
 
 TODO
+
+## Sucres syntaxiques
+
+### Combiner les méthodes http et options
+
+``` javascript
+
+// combine method
+module.exports = {
+  path: '/exemple',
+
+  'patch,put'() {
+    return 'This method will be use for PATCH and PUT request'
+  },
+};
+
+// setup options for multiple method
+module.exports = {
+  path: '/exemple',
+
+  get() {
+
+  },
+  post() {
+
+  },
+
+  'get,post$options': {
+    // your options for GET AND POST methods
+  }
+};
+
+```
