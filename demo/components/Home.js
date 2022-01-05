@@ -7,4 +7,15 @@ module.exports = {
   }) {
     return `Your ip is ${ip}`;
   },
+
+  'patch,put'() {
+    return `You can combine different http method`;
+  },
+
+  'patch,put$options': {
+    body: {
+      removeUnwantedAttributes: true,
+
+    },
+  }
 };
