@@ -14,7 +14,6 @@
   "author": "Lana-Ambre Demailly",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.4.0",
     "glob": "^7.1.7",
     "path-to-regexp": "^6.2.0"
   },
