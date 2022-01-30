@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "@uio/server",
   "version": "0.0.0",
   "description": "",
   "main": "lib/App.js",
