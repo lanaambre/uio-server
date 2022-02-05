@@ -1,27 +1,16 @@
-module.exports = {
-  name: 'User',
-  path: '/user/:id',
+export default {
+  name: '',
+  path: '/example',
 
-  get({
-    params,
-    $db,
-  }) {
-    return $db.user.getById(params.id);
+  get() {
+    return "I'm an Uio component";
   },
 
-  post({
-    body,
-    $db,
-  }) {
-    return $db.user.create(body);
+  post({ body, db }) {
+    return db.example.create(body);
   },
 
-  delete({
-    params,
-    $db,
-  }) {
-    return $db.user.deleteById(params.id);
-  },
+  methods: {},
 
   body: {
     username: {
@@ -41,4 +30,4 @@ module.exports = {
   bodyOptions: {
     removeUnwantedAttributes: true,
   },
-}
+};

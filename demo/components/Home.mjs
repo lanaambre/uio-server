@@ -1,10 +1,8 @@
-module.exports = {
+export default {
   name: 'Home',
   path: '/',
 
-  get({
-    ip
-  }) {
+  get({ ip }) {
     return `Your ip is ${ip}`;
   },
 
@@ -15,7 +13,6 @@ module.exports = {
   'patch,put$options': {
     body: {
       removeUnwantedAttributes: true,
-
     },
-  }
+  },
 };

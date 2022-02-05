@@ -2,13 +2,14 @@
   "name": "@uio/server",
   "version": "0.0.0",
   "description": "",
-  "main": "lib/App.js",
+  "main": "lib/App.mjs",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd demo && nodemon ./index.js --watch ../lib --watch .",
+    "dev": "cd demo && nodemon ./index.mjs --watch ../lib --watch .",
     "start": "npm run dev"
   },
   "author": "Lana-Ambre Demailly",

@@ -1,28 +1,18 @@
-module.exports = {
+export default {
   name: 'Article',
   path: '/articles/:slug-a:id.html',
 
-  get({
-    params,
-  }) {
+  get({ params }) {
     return `Slug : ${params.slug}\nId : ${params.id}`;
   },
 
-  post() {
-
-  },
+  post() {},
 
   params: {
-    slug: {
-
-    },
+    slug: {},
   },
 
-  query: {
+  query: {},
 
-  },
-
-  body: {
-
-  },
+  body: {},
 };

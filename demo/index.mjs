@@ -1,9 +1,9 @@
-require('dotenv').config();
+import 'dotenv/config.js'; // eslint-disable-line
 
-const App = require('../lib/App');
+import App from '../lib/App.mjs';
 
-const Home = require('./components/Home.js');
-const Article = require('./components/Article.js');
+import Home from './components/Home.mjs';
+import Article from './components/Article.mjs';
 
 new App({
   host: process.env.HOST,
