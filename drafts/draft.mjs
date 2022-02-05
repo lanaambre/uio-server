@@ -2,9 +2,9 @@
 // const Server = require('@uio/server');
 // const JSONHome = require('@uio/jsonhome-plugin');
 
-const Server = require('../lib/core');
+import App from '../lib/App.mjs';
 
-new Server()
+new App()
   .get('/', () => 'Hello World')
   .registerDirectory('components')
   .start();
