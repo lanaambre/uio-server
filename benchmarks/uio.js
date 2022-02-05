@@ -1,9 +1,16 @@
-const App = require('../lib/App');
+import App from '../lib/App.mjs';
 
 const app = new App({
   port: 3000,
 });
 
-app.get('/', () => JSON.stringify({
-    hello: 'world',
-})).start();
+app
+  .registerComponent({
+    path: '/',
+    get() {
+      return JSON.stringify({
+        hello: 'world',
+      });
+    },
+  })
+  .start();

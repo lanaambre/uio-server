@@ -1,5 +1,6 @@
-const fastify = require('fastify')()
+import Fastify from 'fastify'; // eslint-disable-line
 
+const fastify = Fastify();
 const schema = {
   schema: {
     response: {
@@ -7,16 +8,16 @@ const schema = {
         type: 'object',
         properties: {
           hello: {
-            type: 'string'
-          }
-        }
-      }
-    }
-  }
-}
+            type: 'string',
+          },
+        },
+      },
+    },
+  },
+};
 
-fastify.get('/', schema, function (req, reply) {
-  reply.send({ hello: 'world' })
-})
+fastify.get('/', schema, (req, reply) => {
+  reply.send({ hello: 'world' });
+});
 
-fastify.listen(3000)
+fastify.listen(3000);
