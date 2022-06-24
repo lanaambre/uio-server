@@ -85,7 +85,7 @@ const Users = {
     // get users
   },
   post() {
-    // create an user
+    // create a user
   }
 }
 
